@@ -1,4 +1,8 @@
-{
+package.json
+index.html
+src/
+public/
+vite.config.js (या vite.config.ts){
   "name": "pdfsun",
   "private": true,
   "version": "2.0.0",
