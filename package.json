@@ -10,7 +10,6 @@
   "vite": "...",
   "@vitejs/plugin-react": "..."
 }
-}
   "name": "pdfsun",
   "private": true,
   "version": "2.0.0",
