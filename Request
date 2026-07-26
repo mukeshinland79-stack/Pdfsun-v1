@@ -1,0 +1,16 @@
+import os
+
+# Check upload directory for project files
+upload_dir = "/mnt/agents/upload/"
+if os.path.exists(upload_dir):
+    for root, dirs, files in os.walk(upload_dir):
+        level = root.replace(upload_dir, '').count(os.sep)
+        indent = ' ' * 2 * level
+        print(f"{indent}{os.path.basename(root)}/")
+        subindent = ' ' * 2 * (level + 1)
+        for file in files[:20]:  # Limit to avoid too much output
+            print(f"{subindent}{file}")
+        if len(files) > 20:
+            print(f"{subindent}... and {len(files) - 20} more files")
+else:
+    print("Upload directory does not exist.")/
