@@ -1,3 +1,6 @@
+{
+  "name": "pdfsun-v1",
+...
 "scripts": {
   "dev": "vite",
   "build": "vite build",
