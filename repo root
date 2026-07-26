@@ -1,0 +1,23 @@
+{
+  "buildCommand": "cd your-project-folder && npm install && npm run build",
+  "outputDirectory": "your-project-folder/dist",
+  "framework": "vite",
+  "installCommand": "cd your-project-folder && npm install"
+}
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
+}
+{
+  "name": "pdfsun",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  }
+}
